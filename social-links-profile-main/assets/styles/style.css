@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+    --primary-font: 'Inter', sans-serif;
+}
+
+/* Create by mobile first */
+
+.flex-container {
+    border: 2px solid black;
+    background-color: var(--neutral-dark-grey);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-container img {
+    border-radius: 50%;
+}
+
+.info-person {
+    font-family: var(--primary-font);
+    color: var(--neutral-white);
+    letter-spacing: 2px;
+}
+
+.info-person p {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.sub-info {
+    color: var(--neutral-white);
+    font-size: 1rem;
+    font-family: var(--primary-font);
+}
+
+.flex-links {
+    height: 40%;
+    width: 70%;
+    display: grid;
+    justify-content: center;
+}
+
+.flex-links>div{
+    background-color: var(--neutral-grey);
+    height: 2.5rem;
+    width: 18rem;
+    border-radius: 8px;
+}
+
+.flex-links p:first-child {
+    color: var(--neutral-white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flex-links a:first-child{
+    list-style: none;
+    list-style-type: none;
+    color: var(--neutral-white);
+    font-family: var(--primary-font);
+    text-decoration: none;
+}
+
+.flex-links a:hover:first-child{
+    transition: 1s;
+    transform: scaleY(20);
+}
+
+@media  (width >= 375px) {
+    .flex-container{
+        background-color: var(--neutral-dark-grey);
+        height: 40rem;
+        width: 90vw;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 5%;
+        border: none;
+        margin-top: 15%;
+    }
+    body{
+        background-color: var(--neutral-off-black);
+    }
+}
+
+@media (width >= 600px) {
+    .flex-container{
+        width: 60vw;
+        margin-top: 10%;
+    }
+}
+
+@media (width >= 1000px) {
+    .flex-container{
+        width: 40vw;
+        margin-top: 8%;
+    }
+}
+
+@media (width >= 1440px) {
+    .flex-container{
+        width: 30vw;
+        margin-top: 5%;
+    }
+}
