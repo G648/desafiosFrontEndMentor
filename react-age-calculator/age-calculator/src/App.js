@@ -1,33 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import { Container, ContainerInputs } from './components/Container/Container';
-import { InputBox } from './components/Input/input';
-
+import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <div className='App'>
+    
+      <Home />
 
-      <Container>
-        <ContainerInputs>
-          <InputBox
-            textInput={"Dia"}
-          />
-
-
-          <InputBox
-            textInput={"Mês"}
-          />
-
-
-          <InputBox
-            textInput={"Ano"}
-          />
-
-        </ContainerInputs>
-      </Container>
-
-    </div>
   );
 }
 

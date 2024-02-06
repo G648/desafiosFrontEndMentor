@@ -12,6 +12,10 @@ export const Input = styled.input`
     font-weight:bold;
     color: ${APP_COLORS.black};
     gap: 15px;
+
+    &::placeholder{
+        font-size: 2.6rem;
+    }
 `
 
 export const LabelText = styled.label`
@@ -30,13 +34,22 @@ export const InputBoxFlex = styled.div`
 `
 
 export function InputBox({
-    textInput
+    textInput,
+    placeholderInfo,
+    inputValue,
+    onChangeValue
 }) {
     return (
         <>
             <InputBoxFlex>
-                <LabelText> {textInput} </LabelText>
-                <Input/>
+                <LabelText>
+                    {textInput}
+                </LabelText>
+                <Input
+                    onChange={onChangeValue}
+                    placeholder={placeholderInfo}
+                    value={inputValue}
+                />
             </InputBoxFlex>
         </>
     )

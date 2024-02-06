@@ -8,13 +8,16 @@ export const Container = styled.div`
     background-color: black;
     background-color: ${APP_COLORS.white};
     border-radius: 24px 24px 200px 24px; 
+    
+    box-shadow: 20px 10px 30px rgba(0,0,0, 0.600);
+
+    margin-top: 2%;
+    padding: 3%;
 `
 
 export const ContainerInputs = styled.div`
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 70%;
-    padding-top: 6%;
     gap: 15px;
-    padding-left: 5%;
 `
